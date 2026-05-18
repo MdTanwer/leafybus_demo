@@ -1,0 +1,11 @@
+yatriyum.com {
+    reverse_proxy 127.0.0.1:9082
+}
+
+api.yatriyum.com {
+    reverse_proxy 127.0.0.1:3000
+}
+
+leafybus.yatriyum.com {
+    reverse_proxy 127.0.0.1:3001
+}

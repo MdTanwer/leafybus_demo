@@ -1,0 +1,11 @@
+services:
+  leafybus-api:
+    build:
+      context: .
+    container_name: leafybus-api
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      PORT: 3000
+      LEAFYBUS_API_KEY: ${LEAFYBUS_API_KEY}
+      OPERATOR_QUERY_NAME: leafybus
