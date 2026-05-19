@@ -104,6 +104,8 @@ const server = createServer((req, res) => {
       data: {
         pnr: record.pnr,
         passenger_name: record.passengerName,
+        mobile_number: record.mobileNumber,
+        pnr_status: record.pnrStatus,
         seat_number: record.seatNumber,
         scheduled_departure_time: record.scheduledDepartureTime,
         boarding_point: record.boardingPoint,

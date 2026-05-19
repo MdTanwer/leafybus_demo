@@ -1,6 +1,8 @@
 export type PassengerRecord = {
   pnr: string;
   passengerName: string;
+  mobileNumber: string;
+  pnrStatus: "active" | "expired" | "cancelled" | "completed";
   seatNumber: string;
   scheduledDepartureTime: string;
   boardingPoint: string;
@@ -12,6 +14,8 @@ export type SuccessResponse = {
   data: {
     pnr: string;
     passenger_name: string;
+    mobile_number: string;
+    pnr_status: "active" | "expired" | "cancelled" | "completed";
     seat_number: string;
     scheduled_departure_time: string;
     boarding_point: string;
